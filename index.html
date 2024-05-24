@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chabad Bali | Shabbat Bali | Kosher Bali</title>
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <meta name="keywords" content="kosher, jewish, shabbat, chabad">
+    <meta name="description" content="Welcome to Chabad Bali, Chabad Indonesia. Bali Shul for Shabbat and High Holidays. Bali kosher food! Please contact Chabad Bali to learn more. Tourists welcomed!">
+    
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chabad Bali | Shabbat Bali | Kosher Bali | Bali Kosher">
+    <meta property="og:description" content="Welcome to Chabad Bali, Chabad Indonesia. Bali Shul for Shabbat and High Holidays. Bali kosher food! Please contact Chabad Bali to learn more. Tourists welcomed!">
+    <meta property="og:url" content="https://www.chabadbali.org/">
+    <meta property="og:site_name" content="Chabad Bali">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .hero {
+            background: url('kotel.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-text {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-text h1 {
+            padding: 20px;
+            font-size: 3em;
+            margin: 0;
+            font-family: "Rock Salt", cursive;
+            display: inline-block;
+        }
+
+        .message {
+            padding: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #9db3eb;
+            color: white;
+            font-family: "Rock Salt", cursive;
+        }
+
+        .message-btn {
+            padding: 16px 32px;
+            color: white;
+            background-color: #e43e33;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .donate {
+            background: url('rebbe.jpeg') no-repeat center center/cover;
+            min-height: 425px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-family: "Rock Salt", cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .donate h2 {
+            padding: 60px 80px;
+        }
+
+        .paypal {
+            min-height: 230px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+        }
+
+        .photo-grid {
+            display: grid;
+            gap: 0; /* Optional: Add gap between photos if desired */
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Large screens: 2 rows and 3 columns */
+        @media (min-width: 900px) {
+            .photo-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+
+        /* Medium screens: 3 rows and 2 columns */
+        @media (min-width: 600px) and (max-width: 899px) {
+            .photo-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+
+        /* Small screens: 1 column */
+        @media (max-width: 599px) {
+            .photo-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Chabad Bali</h1>
+        </div>
+    </div>
+    <div class="message">
+        <div class="message-text">
+            <h2>Welcome to Chabad Bali</h2>
+            <h2>Please join us at Chabad Bali for Shabbat and High Holiday services and meals.</h2>
+            <h2>Click below to contact us.</h2>
+            <br>
+            <a class="message-btn" href="https://tawk.to/chat/5e2561578e78b86ed8aa20b7/default">Message Chabad Bali</a>
+        </div>
+    </div>
+    <div class="donate">
+        <h2>If you are able to, please click below to donate so that others can benefit from the Chabad Bali community gatherings. Thanks so much. We only have PayPal at the moment. Contact us above for bank account details.</h2>
+    </div>
+    <div class="paypal">
+        <code>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <div class="paypal-donations">
+                    <input type="hidden" name="cmd" value="_donations"> 
+                    <input type="hidden" name="bn" value="TipsandTricks_SP"> 
+                    <input type="hidden" name="business" value="chabadbali@chabadbali.org"> 
+                    <input type="hidden" name="item_name" value="Chabad Bali"> 
+                    <input type="hidden" name="item_number" value="Chabad Bali"> 
+                    <input type="hidden" name="rm" value="0"> 
+                    <input type="hidden" name="currency_code" value="USD"> 
+                    <input type="image" style="cursor: pointer;" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online."> 
+                    <img class="lazy lazy-hidden" decoding="async" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    <noscript>
+                        <img decoding="async" alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    </noscript>
+                </div>
+            </form>
+        </code>
+    </div>
+    <div class="photo-grid">
+        <img src="wine-1.jpeg" alt="Kosher Wine">
+        <img src="chulent-2.jpeg" alt="Chulent">
+        <img src="challah-3.jpeg" alt="Challah">
+        <img src="mango-4.jpeg" alt="Mango">
+        <img src="potato-5.jpeg" alt="Potatos">
+        <img src="watermelon-6.jpeg" alt="Watermelon">
+    </div>
+</body>
+</html>
