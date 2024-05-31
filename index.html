@@ -87,13 +87,53 @@
             padding: 60px 80px;
         }
 
-        .paypal {
+        .payments {
             min-height: 230px;
             background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            /* text-align: center; */
+            font-family: "Rock Salt", cursive;
+        }
+
+        .payments .container {
+            display: flex;
+            max-width: 800px;
+            width: 100%;
+            margin: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .payments .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .payments .column:first-child {
+            border-right: 1px solid #ccc;
+        }
+
+        .payments-button {
+            display: inline-block;
+            background-color: #009cde;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .payments-button:hover {
+            background-color: #007bb5;
+            border-color: #007bb5;
         }
 
         .photo-grid {
@@ -145,31 +185,40 @@
             <h2>Please join us at Chabad Bali for Shabbat and High Holiday services and meals.</h2>
             <h2>Click below to contact us.</h2>
             <br>
-            <a class="message-btn" href="https://tawk.to/chat/5e2561578e78b86ed8aa20b7/default">Message Chabad Bali</a>
+            <a class="message-btn" href="https://tawk.to/chat/665957cd981b6c564776a73e/1hv6ftuuv">Message Chabad Bali</a>
         </div>
     </div>
     <div class="donate">
-        <h2>If you are able to, please click below to donate so that others can benefit from the Chabad Bali community gatherings. Thanks so much. We only have PayPal at the moment. Contact us above for bank account details.</h2>
+        <h2>If you are able to, please donate so that you and others can benefit from the Chabad Bali community gatherings. Thank you so much.</h2>
     </div>
-    <div class="paypal">
-        <code>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                <div class="paypal-donations">
-                    <input type="hidden" name="cmd" value="_donations"> 
-                    <input type="hidden" name="bn" value="TipsandTricks_SP"> 
-                    <input type="hidden" name="business" value="chabadbali@chabadbali.org"> 
-                    <input type="hidden" name="item_name" value="Chabad Bali"> 
-                    <input type="hidden" name="item_number" value="Chabad Bali"> 
-                    <input type="hidden" name="rm" value="0"> 
-                    <input type="hidden" name="currency_code" value="USD"> 
-                    <input type="image" style="cursor: pointer;" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online."> 
-                    <img class="lazy lazy-hidden" decoding="async" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    <noscript>
-                        <img decoding="async" alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                    </noscript>
-                </div>
-            </form>
-        </code>
+    <div class="payments">
+        <div class="container">
+            <div class="column">
+                <h2>PayPal</h2>
+                <code>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <div class="paypal-donations">
+                            <input type="hidden" name="cmd" value="_donations"> 
+                            <input type="hidden" name="bn" value="TipsandTricks_SP"> 
+                            <input type="hidden" name="business" value="chabadbali@chabadbali.org"> 
+                            <input type="hidden" name="item_name" value="Chabad Bali"> 
+                            <input type="hidden" name="item_number" value="Chabad Bali"> 
+                            <input type="hidden" name="rm" value="0"> 
+                            <input type="hidden" name="currency_code" value="USD"> 
+                            <input type="image" style="cursor: pointer;" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online."> 
+                            <img class="lazy lazy-hidden" decoding="async" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            <noscript>
+                                <img decoding="async" alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                            </noscript>
+                        </div>
+                    </form>
+                </code>
+            </div>
+            <div class="column">
+                <h2>Israeli Payment Methods</h2>
+                <a href="https://ultra.kesherhk.info/external/paymentPage/313387" class="payments-button">Kesher</a>
+            </div>
+        </div>
     </div>
     <div class="photo-grid">
         <img src="wine-1.jpeg" alt="Kosher Wine">
@@ -179,5 +228,19 @@
         <img src="potato-5.jpeg" alt="Potatos">
         <img src="watermelon-6.jpeg" alt="Watermelon">
     </div>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/665957cd981b6c564776a73e/1hv6ftuuv';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>
