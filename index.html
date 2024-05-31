@@ -147,19 +147,19 @@
             object-fit: cover;
         }
 
-        /* Large screens: 2 rows and 3 columns */
+        /* Large screens: 1 row and 3 columns */
         @media (min-width: 900px) {
             .photo-grid {
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-rows: 1fr;
             }
         }
 
-        /* Medium screens: 3 rows and 2 columns */
+        /* Medium screens: 1 row and 3 columns */
         @media (min-width: 600px) and (max-width: 899px) {
             .photo-grid {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
             }
         }
 
@@ -167,10 +167,9 @@
         @media (max-width: 599px) {
             .photo-grid {
                 grid-template-columns: 1fr;
-                grid-template-rows: repeat(6, 1fr);
+                grid-template-rows: repeat(3, 1fr);
             }
         }
-
     </style>
 </head>
 <body>
@@ -224,9 +223,6 @@
         <img src="wine-1.jpeg" alt="Kosher Wine">
         <img src="chulent-2.jpeg" alt="Chulent">
         <img src="challah-3.jpeg" alt="Challah">
-        <img src="mango-4.jpeg" alt="Mango">
-        <img src="potato-5.jpeg" alt="Potatos">
-        <img src="watermelon-6.jpeg" alt="Watermelon">
     </div>
 
     <!--Start of Tawk.to Script-->
@@ -240,6 +236,10 @@
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
         })();
+
+        Tawk_API.onLoad = function() {
+            Tawk_API.setStatus('away');
+        };
     </script>
     <!--End of Tawk.to Script-->
 </body>
