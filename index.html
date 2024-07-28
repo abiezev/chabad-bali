@@ -170,6 +170,23 @@
                 grid-template-rows: repeat(3, 1fr);
             }
         }
+
+        .form-container {
+            min-width: 300px;
+            width: 70%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        @media (max-width: 300px) {
+            .form-container {
+                width: 100%;
+            }
+        }
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -183,7 +200,9 @@
             <h2>Welcome to Chabad Bali</h2>
             <h2>Please join us at Chabad Bali for Shabbat and High Holiday services and meals.</h2>
             <br>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqGuesXpPW9ALbA_3gLl3DwUzD9zPutcbYb1CzrUwWMgvFGA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqGuesXpPW9ALbA_3gLl3DwUzD9zPutcbYb1CzrUwWMgvFGA/viewform?embedded=true">Loading...</iframe>
+            </div>
         </div>
     </div>
     <div class="donate">
